@@ -6,8 +6,8 @@ FROM python:3.10-slim
 ENV PYTHONUNBUFFERED True
 
 # Copy local code to the container image.
-ENV APP_HOME /app
-WORKDIR $APP_HOME
+ENV panel_cloud_run /app
+WORKDIR $panel_cloud_run
 COPY . ./
 
 # Install production dependencies.
