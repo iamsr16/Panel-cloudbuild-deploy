@@ -15,7 +15,9 @@ steps:
 
 substitutions:
   _SERVICE_FOLDER: service
-  _SERVICE_NAME: docker
+  _SERVICE_NAME: panel-cloudbuild-deploy
+  _LOCATION: us-central1
+  _GCR_REGION: us 
 
 images:
   - "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}"
